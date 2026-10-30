@@ -1,0 +1,21 @@
+flowchart LR
+    C[External sales channel<br/>Order capture and status display]
+    G[Protected API boundary<br/>Authentication, authorization, request limits]
+    I[Integration layer<br/>Validation, mapping, correlation, routing]
+    Q[(Optional durable queue<br/>Async decoupling and retry)]
+    S[SAP SD process boundary<br/>Supported sales-order API or approved interface]
+    M[Monitoring and reconciliation<br/>Message state, exceptions, cross-system comparison]
+
+    C -->|F1 Order request + channel reference| G
+    G --> I
+    I -->|Synchronous request when response needs permit| S
+    I -.->|If async is selected and supported| Q
+    Q -.-> S
+    S -->|F2 Acceptance or rejection| I
+    I -->|Correlated acknowledgement| C
+    S -.->|F3 Status source TBD| I
+    I -.->|Mapped status update| C
+    G -.-> M
+    I -.-> M
+    Q -.-> M
+    S -.-> M

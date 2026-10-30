@@ -1,0 +1,17 @@
+# Office temporary/lock files
+~$*.docx
+~$*.xlsx
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Temporary exports and scratch files
+*.tmp
+*.bak
+work/
+
+# Keep final reports and intentional datasets/exports under version control.
