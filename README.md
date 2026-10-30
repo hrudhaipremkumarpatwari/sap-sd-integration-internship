@@ -11,7 +11,7 @@ This repository organizes the deliverables for the Junior SAP SD Integration Spe
 | **Focus** | SAP Sales and Distribution (SD) integration planning and documentation |
 | **Duration** | Four weeks, 30 October–27 November 2026 |
 | **Format** | Research, process analysis, proposed architecture, test design, and illustrative evaluation |
-| **Primary deliverables** | Four professionally structured reports, one per week |
+| **Primary deliverables** | Four weekly report drafts in DOCX format |
 | **System status** | Conceptual case study; no live SAP tenant or production integration is represented |
 
 ## Project objectives
@@ -56,41 +56,43 @@ sap-sd-integration-internship/
 │   └── report-template.md
 ├── week-01-strategic-planning/
 │   ├── README.md
-│   ├── report/
-│   └── supporting/
+│   ├── report/week-01-strategic-planning.docx
+│   └── supporting/                    # placeholder
 ├── week-02-technical-integration-blueprint/
 │   ├── README.md
-│   ├── report/
-│   ├── diagrams/
-│   └── supporting/
+│   ├── report/week-02-technical-integration-blueprint.docx
+│   ├── diagrams/proposed-logical-architecture.mmd
+│   └── supporting/                    # placeholder
 ├── week-03-integration-test-scenarios/
 │   ├── README.md
-│   ├── report/
-│   ├── test-cases/
-│   └── supporting/
+│   ├── report/week-03-integration-test-scenarios.docx
+│   ├── test-cases/                    # placeholder
+│   └── supporting/                    # placeholder
 ├── week-04-post-implementation-evaluation/
 │   ├── README.md
-│   ├── report/
-│   ├── datasets/
-│   └── supporting/
-└── shared/
-    ├── diagrams/
-    ├── datasets/
-    └── references/
+│   ├── report/week-04-post-implementation-evaluation.docx
+│   ├── datasets/                      # placeholder
+│   └── supporting/                    # placeholder
+├── shared/
+│   ├── datasets/README.md
+│   ├── diagrams/README.md
+│   └── references/README.md
+└── submission/
+    └── portal-descriptions.md
 ```
 
-Empty `report/`, `supporting/`, and `diagrams/` folders are intentional staging locations. Add the final `.docx` reports and source materials as they are completed. Keep source files for diagrams and tables alongside exports where practical.
+All four weekly DOCX report drafts are present in the repository. Week 2 also includes a proposed logical architecture diagram in Mermaid format. The Week 1 and Week 2 supporting folders, Week 3 test-cases and supporting folders, and Week 4 datasets and supporting folders currently contain placeholder markers; add supporting files there as they are completed.
 
 ## Deliverables and navigation
 
-The internship portal specifies a **DOC/DOCX report for each week**. Suggested filenames:
+The internship portal specifies a **DOC/DOCX report for each week**. The following weekly report drafts are currently tracked on GitHub:
 
-1. `week-01-strategic-planning/report/week-01-strategic-planning.docx`
-2. `week-02-technical-integration-blueprint/report/week-02-technical-integration-blueprint.docx`
-3. `week-03-integration-test-scenarios/report/week-03-integration-test-scenarios.docx`
-4. `week-04-post-implementation-evaluation/report/week-04-post-implementation-evaluation.docx`
+1. [Week 1 strategic planning report](week-01-strategic-planning/report/week-01-strategic-planning.docx)
+2. [Week 2 technical integration blueprint](week-02-technical-integration-blueprint/report/week-02-technical-integration-blueprint.docx)
+3. [Week 3 integration test scenarios](week-03-integration-test-scenarios/report/week-03-integration-test-scenarios.docx)
+4. [Week 4 post-implementation evaluation](week-04-post-implementation-evaluation/report/week-04-post-implementation-evaluation.docx)
 
-Use [the report template](docs/report-template.md) for a consistent title page, scope note, headings, tables, references, and evidence labels. Week-specific checklists are in each folder’s README. The original internship brief asks for a description of at least 200 words at submission time; prepare that description separately for each weekly report based on what that report actually contains.
+Use [the report template](docs/report-template.md) for consistent structure and evidence labels. Week-specific checklists are in each folder’s README. The original internship brief asks for a description of at least 200 words at submission time; prepare that description separately for each weekly report based on its final contents. These repository drafts are not evidence that the reports were formally submitted or accepted.
 
 Copy-ready descriptions meeting that requirement are collected in [submission/portal-descriptions.md](submission/portal-descriptions.md). Review them against your final reports and actual work before submitting.
 
